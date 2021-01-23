@@ -9,7 +9,7 @@
             <div id="chartContainer" [ngClass]="{'half': chartControlsService.showData}">
                 <app-area-chart #areaChart [data]="chartData"></app-area-chart>
             </div>
-            <div id="deliveryTable"  *ngIf="chartControlsService.showData">
+            <!-- <div id="deliveryTable"  *ngIf="chartControlsService.showData">
                 <table mat-table [dataSource]="deliveryMetrics"
                        *ngIf="deliveryMetrics"
                        class="mat-elevation-z8">
@@ -32,12 +32,12 @@
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                     <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="table-row"></tr>
                 </table>
-            </div>
+            </div> -->
         </div>
-        <mat-slide-toggle class="show-data" color="primary" 
+        <!-- <mat-slide-toggle class="show-data" color="primary"
             [checked]="chartControlsService.showData"
             (change)="toggleData($event)">
             Show data
-        </mat-slide-toggle>
+        </mat-slide-toggle> -->
     </mat-card-content>
 </mat-card>
